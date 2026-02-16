@@ -14,40 +14,52 @@
             </div>
             <div class="teclas-area">
                 <div class="teclas-letra">
-                    <button class="botao" type="button">A</button>
-                    <button class="botao" type="button">B</button>
-                    <button class="botao" type="button">C</button>
-                    <button class="botao" type="button">D</button>
-                    <button class="botao" type="button">E</button>
-                    <button class="botao" type="button">F</button>
-                    <button class="botao" type="button">G</button>
-                    <button class="botao" type="button">H</button>
-                    <button class="botao" type="button">I</button>
-                    <button class="botao" type="button">J</button>
-                    <button class="botao" type="button">K</button>
-                    <button class="botao" type="button">L</button>
-                    <button class="botao" type="button">M</button>
-                    <button class="botao" type="button">N</button>
-                    <button class="botao" type="button">O</button>
-                    <button class="botao" type="button">P</button>
-                    <button class="botao" type="button">Q</button>
-                    <button class="botao" type="button">R</button>
-                    <button class="botao" type="button">S</button>
-                    <button class="botao" type="button">T</button>
-                    <button class="botao" type="button">U</button>
-                    <button class="botao" type="button">V</button>
-                    <button class="botao" type="button">W</button>
-                    <button class="botao" type="button">X</button>
-                    <button class="botao" type="button">Y</button>
-                    <button class="botao" type="button">Z</button>
+                    <button class="botao" onclick="escrever('A')" type="button">A</button>
+                    <button class="botao" onclick="escrever('B')" type="button">B</button>
+                    <button class="botao" onclick="escrever('C')" type="button">C</button>
+                    <button class="botao" onclick="escrever('D')" type="button">D</button>
+                    <button class="botao" onclick="escrever('E')" type="button">E</button>
+                    <button class="botao" onclick="escrever('F')" type="button">F</button>
+                    <button class="botao" onclick="escrever('G')" type="button">G</button>
+                    <button class="botao" onclick="escrever('H')" type="button">H</button>
+                    <button class="botao" onclick="escrever('I')" type="button">I</button>
+                    <button class="botao" onclick="escrever('J')" type="button">J</button>
+                    <button class="botao" onclick="escrever('K')" type="button">K</button>
+                    <button class="botao" onclick="escrever('L')" type="button">L</button>
+                    <button class="botao" onclick="escrever('M')" type="button">M</button>
+                    <button class="botao" onclick="escrever('N')" type="button">N</button>
+                    <button class="botao" onclick="escrever('O')" type="button">O</button>
+                    <button class="botao" onclick="escrever('P')" type="button">P</button>
+                    <button class="botao" onclick="escrever('Q')" type="button">Q</button>
+                    <button class="botao" onclick="escrever('R')" type="button">R</button>
+                    <button class="botao" onclick="escrever('S')" type="button">S</button>
+                    <button class="botao" onclick="escrever('T')" type="button">T</button>
+                    <button class="botao" onclick="escrever('U')" type="button">U</button>
+                    <button class="botao" onclick="escrever('V')" type="button">V</button>
+                    <button class="botao" onclick="escrever('W')" type="button">W</button>
+                    <button class="botao" onclick="escrever('X')" type="button">X</button>
+                    <button class="botao" onclick="escrever('Y')" type="button">Y</button>
+                    <button class="botao" onclick="escrever('Z')" type="button">Z</button>
                 </div>
                 <div class="teclas-especiais">
-                    <button class="botao" id="botao-limpar" type="button">C</button>
-                    <button class="botao" id="botao-apagar" type="button">⌫</button>
-
+                    <button class="botao botao-especial" onclick="limpar()" id="botao-limpar" type="button">C</button>
+                    <button class="botao botao-especial" onclick="apagar()" id="botao-apagar" type="button">⌫</button>
+                    <button class="botao botao-especial" onclick="escrever('(')" type="button">(</button>
+                    <button class="botao botao-especial" onclick="escrever(')')" type="button">)</button>
+                    <button class="botao botao-especial" onclick="escrever('→')" type="button">→</button>
+                    <button class="botao botao-especial" onclick="escrever(' ∧ ')" type="button">∧</button>
+                    <button class="botao botao-especial" onclick="escrever('↔')" type="button">↔</button>
+                    <button class="botao botao-especial" onclick="escrever(' ∨ ')" type="button">∨</button>
+                    <button class="botao botao-especial" onclick="escrever('~')" type="button">~</button>
+                    <button class="botao botao-especial" onclick="escrever(' ⊻ ')" type="button">⊻</button>
+                    <button class="botao botao-especial" onclick="escrever_verdade()" id="botao-verdade" type="button">V</button>
+                    <button class="botao botao-especial" onclick="escrever_falso()" id="botao-falso" type="button">F</button>
+                    <button class="botao botao-especial" id="botao-igual" type="button">=</button>
+                    
                 </div>
             </div>
         </div>
     </section>
 </body>
+<script src="index.js" defer></script>
 </html>
